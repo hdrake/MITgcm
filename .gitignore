@@ -115,3 +115,9 @@ core
 
 /verification/*/tr_run.*
 
+/experiments/*/build/*
+/experiments/*/run/*
+/experiments/*/input/*.init
+/experiments/*/input/*.bin
+/experiments/*/input/std*
+/experiments/*/input/output.txt

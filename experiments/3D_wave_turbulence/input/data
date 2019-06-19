@@ -1,0 +1,93 @@
+# ====================
+# | Model parameters |
+# ====================
+#
+# Continuous equation parameters
+ &PARM01
+
+ tRef = 350*0.,
+ sRef = 350*35.,
+
+ no_slip_sides  = .TRUE.,
+ no_slip_bottom = .TRUE.,
+
+ viscAh  = 2.E-3,
+ viscAz  = 2.E-3,
+
+ diffKhT = 1.E-4,
+ diffKzT = 1.E-4,
+
+ f0   = 0.53E-4,
+ beta = 0.E-11,
+
+ tAlpha = 2.E-4,
+ sBeta  = 0.E-4,
+
+ gravity = 9.81,
+ gBaro   = 9.81,
+
+ rigidLid = .FALSE.,
+ implicitFreeSurface=.TRUE.,
+ exactConserv = .TRUE.
+
+ nonHydrostatic = .TRUE.,
+ useSingleCpuIO = .TRUE.,
+
+ readBinaryPrec  = 64,
+ writeBinaryPrec = 64,
+ writeStatePrec  = 64,
+
+ staggerTimeStep=.TRUE.
+
+ saltStepping  = .FALSE.,
+
+ tempAdvScheme = 7,
+
+ hFacMin=0.1,
+
+## This parameter is not in the NAMELIST in this version of MITgcm.
+# momTidalForcing = .FALSE.,
+
+ &
+
+# Elliptic solver parameters
+ &PARM02
+ cg2dMaxIters       =  10000,
+ cg2dTargetResidual = 1.E-14,
+
+ cg3dMaxIters       =    400,
+ cg3dTargetResidual = 1.E-14,
+ &
+
+# Time stepping parameters
+ &PARM03
+ niter0          =        0,
+ nTimeSteps      =     8640,
+ deltaT          =      30.,
+ dumpFreq        =       0.,
+ monitorFreq     =  259200.,
+ dumpInitAndLast =  .FALSE.,
+ abEps           =      0.1,
+ pChkptFreq      =  259200.,
+ chkptFreq       =      0.0,
+ momDissip_In_AB =  .FALSE.,
+ &
+
+# Gridding parameters
+ &PARM04
+ usingCartesianGrid=.TRUE.,
+ usingSphericalPolarGrid=.FALSE.,
+
+ delX =  100*30.,
+ delY =  100*30., 
+ delRFile = 'delZ.init',
+ &
+
+# Input datasets
+ &PARM05
+
+ uVelInitFile    = 'U.init',
+ vVelInitFile    = 'V.init',
+ hydrogThetaFile = 'T.init',
+ bathyFile       = 'topog.init',
+ &
