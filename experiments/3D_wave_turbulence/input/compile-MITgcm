@@ -4,7 +4,7 @@ echo "module add engaging/intel/2013.1.046"
 module add engaging/intel/2013.1.046
 cd ../build
 make Clean
-../../../../tools/genmake2 -mods=../code -mpi -of ../../../../tools/build_options/linux_amd64_ifort+impi
+../../../tools/genmake2 -mods=../code -mpi -of ../../../tools/build_options/linux_amd64_ifort+impi
 cd ../build
 make depend
 make

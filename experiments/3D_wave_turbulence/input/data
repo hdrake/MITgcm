@@ -46,7 +46,7 @@
  hFacMin=0.1,
 
 ## This parameter is not in the NAMELIST in this version of MITgcm.
-# momTidalForcing = .FALSE.,
+ momTidalForcing = .FALSE.,
 
  &
 
@@ -62,7 +62,7 @@
 # Time stepping parameters
  &PARM03
  niter0          =        0,
- nTimeSteps      =     8640,
+ nTimeSteps      =       10,
  deltaT          =      30.,
  dumpFreq        =       0.,
  monitorFreq     =  259200.,
@@ -78,8 +78,10 @@
  usingCartesianGrid=.TRUE.,
  usingSphericalPolarGrid=.FALSE.,
 
- delX =  100*30.,
- delY =  100*30., 
+# delX =  2000*30.,
+# delY =  400*30., 
+ dxSpacing = 30.,
+ dySpacing = 30.,
  delRFile = 'delZ.init',
  &
 
