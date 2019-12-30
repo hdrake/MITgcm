@@ -24,14 +24,14 @@
   fileName(1) = 'standardDiag',
 #  frequency(1) = 600.,
 #  frequency(1) = 864000.,
-  frequency(1) = 60.,
+  frequency(1) = 3600.,
 # Temperature budget diagnostics
   fields(1:8,2) = 'gT_Forc', 'ADVr_TH', 'ADVx_TH', 'ADVy_TH',
                   'DFrE_TH', 'DFxE_TH', 'DFyE_TH', 'TOTTTEND',
   filename(2) = 'thDiag',
 #  frequency(2) = 600.,
 #  frequency(2) = 864000.,
-  frequency(2) = 60.,
+  frequency(2) = 3600.,
 
 # KPP diagnostics
 #  fields(1:1,2) = 'KPPdiffT',

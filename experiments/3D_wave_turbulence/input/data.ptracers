@@ -2,7 +2,7 @@
  PTRACERS_numInUse=1,
  PTRACERS_Iter0=0,
 # PTRACERS_dumpFreq=600.,
- PTRACERS_dumpFreq=60.,
+ PTRACERS_dumpFreq=3600.,
 # tracer 1 - Passive Tracer
  PTRACERS_names(1)='ptracer',
  PTRACERS_long_names(1)='Passive Tracer [mol C/m^3]',

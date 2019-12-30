@@ -61,14 +61,14 @@
 
 # Time stepping parameters
  &PARM03
- niter0          =        0,
- nTimeSteps      =       10,
+ niter0          =    28800,
+ nTimeSteps      =    28800,
  deltaT          =      30.,
- dumpFreq        =       0.,
- monitorFreq     =  259200.,
+ dumpFreq        =    3600.,
+ monitorFreq     =   36000.,
  dumpInitAndLast =  .FALSE.,
  abEps           =      0.1,
- pChkptFreq      =  259200.,
+ pChkptFreq      =   86400.,
  chkptFreq       =      0.0,
  momDissip_In_AB =  .FALSE.,
  &
@@ -78,8 +78,6 @@
  usingCartesianGrid=.TRUE.,
  usingSphericalPolarGrid=.FALSE.,
 
-# delX =  2000*30.,
-# delY =  400*30., 
  dxSpacing = 30.,
  dySpacing = 30.,
  delRFile = 'delZ.init',
